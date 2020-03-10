@@ -1,3 +1,15 @@
+.mainColorBg {
+    background-color: rgb(64, 94, 87) !important;
+}
+
+.mainColorFont {
+    color: rgb(64, 94, 87);
+}
+
+a #historyDiv{
+    color: black !important;
+}
+
 .hidden.menu {
     display: none;
 }
@@ -6,18 +18,22 @@
     min-height: 700px;
     padding: 1em 0em;
 }
+
 .masthead .logo.item img {
     margin-right: 1em;
 }
+
 .masthead .ui.menu .ui.button {
     margin-left: 0.5em;
 }
+
 .masthead h1.ui.header {
     margin-top: 3em;
     margin-bottom: 0em;
     font-size: 4em;
     font-weight: normal;
 }
+
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
@@ -26,19 +42,23 @@
 .ui.vertical.stripe {
     padding: 8em 0em;
 }
+
 .ui.vertical.stripe h3 {
     font-size: 2em;
 }
-.ui.vertical.stripe .button + h3,
-.ui.vertical.stripe p + h3 {
+
+.ui.vertical.stripe .button+h3, .ui.vertical.stripe p+h3 {
     margin-top: 3em;
 }
+
 .ui.vertical.stripe .floated.image {
     clear: both;
 }
+
 .ui.vertical.stripe p {
     font-size: 1.33em;
 }
+
 .ui.vertical.stripe .horizontal.divider {
     margin: 3em 0em;
 }
@@ -46,6 +66,7 @@
 .quote.stripe.segment {
     padding: 0em;
 }
+
 .quote.stripe.segment .grid .column {
     padding-top: 5em;
     padding-bottom: 5em;
@@ -59,59 +80,120 @@
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
-    .ui.fixed.menu {
-    display: none !important;
-    }
-    .secondary.pointing.menu .item,
-    .secondary.pointing.menu .menu {
-    display: none;
-    }
-    .secondary.pointing.menu .toc.item {
-    display: block;
-    }
-    .masthead.segment {
-    min-height: 350px;
-    }
-    .masthead h1.ui.header {
-    font-size: 2em;
-    margin-top: 1.5em;
-    }
-    .masthead h2 {
-    margin-top: 0.5em;
-    font-size: 1.5em;
-    }
-}
-
-body,
-.ui.header{
+body, .ui.header {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-#topDiv{
+#topDiv {
     width: 100%;
+    margin-bottom: 2%;
 }
-.banner{
+
+.banner {
     background: url("../image/Surrounding\ Scene.jpg") no-repeat center;
-    width: 100%;
-    max-width: 5833px; /**圖片的寬度不大於圖片實際像素**/
+    width: 90%;
+    max-width: 5833px;
+    /**圖片的寬度不大於圖片實際像素**/
     height: 0;
     max-height: 3806px;
-    padding-bottom: 67.14%; /**根據圖片高寬比計算*/
+    padding-bottom: 67.14%;
+    /**根據圖片高寬比計算*/
     margin: 0 auto;
     background-size: cover;
 }
 
-#sidebarBtnImg{
-    background-color: rgba(255 , 255, 255, 0.8);
+#sidebarBtnImg {
+    background-color: rgba(255, 255, 255, 0.8);
     /* border-radius: 5%; */
 }
 
-.sidebar .button{
+.sidebar .button {
     margin: 3% 10% 3% 10%;
 }
 
-#schedule a,
-#schedule span{
+#schedule a, #schedule span {
     font-size: 1.25rem;
+    /* white-space:nowrap; */
+}
+
+#schedule a {
+    color: #ffffff;
+}
+
+#schedule a{
+    pointer-events: none;
+}
+
+#navbar {
+    background-color: #ffffff;
+}
+
+#LEimg {
+    width: 80px !important;
+}
+
+#historyDiv {
+    border-color: rgb(64, 94, 87) !important;
+    border-width: medium;
+    border-radius: 30px;
+}
+
+#menuIcon1 img:hover,
+#menuIcon2 img:hover,
+#menuIcon3 img:hover,
+#menuIcon4 img:hover {
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px rgb(184, 184, 184);
+    border-radius: 30px;
+    /* background-color: rgb(64, 94, 87); */
+}
+
+#footerLogo {
+    width: 50%;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.footer a {
+    color: rgb(0, 132, 255);
+}
+
+.footer a:hover{
+    color: rgb(126, 193, 255);
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item, .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+    .banner {
+        width: 100%;
+    }
+    #scheduleDiv.ui.vertical.stripe {
+        padding: 2em 0em;
+    }
+    #scheduleArrowDiv {
+        text-align: center !important;
+    }
+    #footerLogo {
+        width: 100%;
+    }
 }

@@ -1,15 +1,5 @@
- /*
- * # Semantic UI - 2.4.2
- * https://github.com/Semantic-Org/Semantic-UI
- * http://www.semantic-ui.com/
- *
- * Copyright 2014 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
 /*!
- * # Semantic UI - Sidebar
+ * # Semantic UI 2.4.0 - Sidebar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -98,8 +88,7 @@
 
 /* Whole Page */
 body.pushable {
-  /* background: #fffaf1 !important; */
-  background-color: #FFFFFF !important;
+  background: #545454 !important;
 }
 
 /* Page Context */
