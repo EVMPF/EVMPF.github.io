@@ -132,7 +132,7 @@ body, .ui.header {
     width: 80px !important;
 }
 
-#historyDiv {
+#historyDiv, #activityDiv {
     border-color: rgb(64, 94, 87) !important;
     border-width: medium;
     border-radius: 30px;
@@ -146,7 +146,6 @@ body, .ui.header {
     -webkit-box-shadow: 0 0 5px 5px#888;
     box-shadow: 0 0 5px 5px rgb(184, 184, 184);
     border-radius: 30px;
-    /* background-color: rgb(64, 94, 87); */
 }
 
 #footerLogo {
@@ -195,5 +194,9 @@ body, .ui.header {
     }
     #footerLogo {
         width: 100%;
+    }
+    #footer h5,
+    #footer h4{
+        white-space:nowrap;
     }
 }

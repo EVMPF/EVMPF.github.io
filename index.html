@@ -2,43 +2,56 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160393087-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160393087-1');
+  </script>
+
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <!-- Standard Meta -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <link rel="Shortcut Icon" type="image/x-icon" href="assets/image/Logo.jpg" />
+  <link rel="Shortcut Icon" type="image/x-icon" href="assets/image/LOGO_PNG.png" />
   <!-- Site Properties -->
   <title>台中市大屯十八庄迎媽祖文化協會</title>
+
   <link rel="stylesheet" href="./assets/Semantic-UI/semantic.min.css">
+  <link rel="stylesheet" href="./assets/Bootstrap/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/site.css">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/container.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/header.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/image.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/container.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/header.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/image.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/menu.css">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/divider.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/segment.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/button.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/list.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/icon.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/transition.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/button.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/list.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="assets/Semantic-UI/components/transition.css">
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
   <script src="./assets/js/jquery-3.1.1.min.js"></script>
+  <script src="./assets/Bootstrap/bootstrap.min.js"></script>
   <script src="./assets/Semantic-UI/semantic.min.js"></script>
-  <script src="./assets/js/visibility.js"></script>
-  <script src="./assets/js/sidebar.js"></script>
-  <script src="./assets/js/transition.js"></script>
+  <script src="./assets/Semantic-UI/components/visibility.js"></script>
+  <script src="./assets/Semantic-UI/components/sidebar.js"></script>
+  <script src="./assets/Semantic-UI/components/transition.js"></script>
   <script src="./assets/js/index.js"></script>
 </head>
 
@@ -96,18 +109,17 @@
           </a>
         </div>
         <div id="menuIcon2" class="four wide column">
-          <a href="http://">
-            <img class="ui medium image" src="./assets/image/2_ALBUM.png" alt="History">
+          <a>
+            <img class="ui medium image" src="./assets/image/2_ALBUM.png" alt="Album">
           </a>
         </div>
         <div id="menuIcon3" class="four wide column">
-          <a href="https://www.youtube.com/watch?v=hnAddwlKK-s">
-            <img class="ui medium image" src="./assets/image/2_VIDEO.png" alt="History">
+          <a href="https://www.youtube.com/watch?v=hnAddwlKK-s" target="_blank">
+            <img class="ui medium image" src="./assets/image/2_VIDEO.png" alt="Video">
           </a>
         </div>
         <div id="menuIcon4" class="four wide column">
-          <a href="https://www.facebook.com/MazuinEighteenvillages/"
-            target="_blank">
+          <a href="https://www.facebook.com/MazuinEighteenvillages/" target="_blank">
             <img class="ui medium image" src="./assets/image/2_FB.png" alt="History">
           </a>
         </div>
@@ -214,6 +226,46 @@
         </div>
       </div>
     </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui stackable grid container">
+        <h2 class="ui header">
+          <img id="LEimg" class="ui mediumn image" src="./assets/image/3_LE.png" alt="Logo">
+          <div class="content">活動訊息</div>
+        </h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- 輪播指標 -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+          <!-- 輪播照片 -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <a>
+                <img class="ui rounded image" src="./assets/image/十八庄防疫宣導-01.png" alt="防疫圖">
+              </a>
+            </div>
+            <div class="item">
+              <a>
+                <img class="ui rounded image" src="./assets/image/1090315請媽祖-01.png" alt="315請媽祖">
+              </a>
+            </div>
+          </div>
+          <!-- 輪播左右箭頭 -->
+          <a id="carouselAngle" class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a id="carouselAngle" class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
     <a name="history">
       <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
@@ -241,27 +293,10 @@
         </div>
       </div>
     </a>
+
     <!-- footer -->
     <div id="footer" class="ui vertical footer segment mainColorBg">
       <div class="ui center align container">
-        <!-- <div class="ui middle aligned centered grid">
-            <div id="footerLogoDiv" class="eight wide column">
-              <div id="footerLogo" class="ui middle aligned grid">
-                <img class="ui image" src="./assets/image/LOGO_PNG.png" alt="logo">
-              </div>
-            </div>
-            <div id="footerInfoDiv" class="eight wide column">
-              <div id="footerInfo">
-                <h4 class="ui left aligned inverted header">台中市 大屯 十八庄迎媽祖 文化協會</h4>
-                <h4 class="ui left aligned inverted header">Eighteen Villages Mazu Patrol Festival</h4>
-                <h5 class="ui left aligned inverted header">Mail：<a href="mailto:taichung18tw@gmail.com">taichung18tw@gmail.com</a></h5>
-                <h5 class="ui left aligned inverted header">Copyright ©<a
-                    href="https://www.facebook.com/%E5%8D%81%E5%85%AB%E5%BA%84%E8%BF%8E%E5%AA%BD%E7%A5%96-2020499274910296/"
-                    target="_blank"> 台中市大屯十八庄迎媽祖文化協會</a></h5>
-              </div>
-            </div>
-          </div> -->
-
         <div class="ui stackable inverted divided equal height stackable grid">
           <div class="ui center aligned seven wide column">
             <img id="footerLogo" class="ui fluid image" src="./assets/image/LOGO_PNG.png" alt="logo">
@@ -279,9 +314,6 @@
       </div>
     </div>
   </div>
-
-
-
 
 </body>
 

@@ -25,7 +25,5 @@ $(document).ready(function () {
         document.getElementById('menuIcon3').setAttribute('class', "eight wide column");
         document.getElementById('menuIcon4').removeAttribute("class");
         document.getElementById('menuIcon4').setAttribute('class', "eight wide column");
-        // document.getElementById('footerLogoDiv').removeAttribute("class");
-        // document.getElementById('footerInfoDiv').removeAttribute('class');
     }
 });
