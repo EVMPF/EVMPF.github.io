@@ -3,10 +3,10 @@
 }
 
 .mainColorFont {
-    color: rgb(64, 94, 87);
+    color: rgb(64, 94, 87) !important;
 }
 
-a #historyDiv{
+a #historyDiv {
     color: black !important;
 }
 
@@ -80,18 +80,43 @@ a #historyDiv{
     display: none;
 }
 
-body, .ui.header {
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
 #topDiv {
     width: 100%;
     margin-bottom: 2%;
 }
 
+#scheduleDiv, #schedule_0401 {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+#schedule_0401Div{
+    padding-top: 4rem;
+}
+
 .banner {
-    background: url("../image/Surrounding\ Scene.jpg") no-repeat center;
-    width: 90%;
+    background: url("../image/FB首圖150-01.png") no-repeat center;
+}
+
+.banner_schedule {
+    background: url("../image/20天巡庄-01.png") no-repeat center;
+}
+
+.banner_schedule_rwdimg_1 {
+    background: url("../image/20天01-01.png") no-repeat center;
+}
+
+.banner_schedule_rwdimg_2 {
+    background: url("../image/20天02-01.png") no-repeat center;
+}
+
+.banner_0401schedule {
+    background: url("../image/20200401MAZU-150.png") no-repeat center;
+}
+
+.banner_rule {
+    width: 95%;
     max-width: 5833px;
     /**圖片的寬度不大於圖片實際像素**/
     height: 0;
@@ -100,11 +125,16 @@ body, .ui.header {
     /**根據圖片高寬比計算*/
     margin: 0 auto;
     background-size: cover;
+    border-radius: .6125em;
 }
 
-#sidebarBtnImg {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* border-radius: 5%; */
+.menu {
+    width: 100% !important;
+}
+
+.menu .item {
+    text-align: center !important;
+    font-size: large !important;
 }
 
 .sidebar .button {
@@ -113,14 +143,13 @@ body, .ui.header {
 
 #schedule a, #schedule span {
     font-size: 1.25rem;
-    /* white-space:nowrap; */
 }
 
 #schedule a {
     color: #ffffff;
 }
 
-#schedule a{
+#schedule a {
     pointer-events: none;
 }
 
@@ -138,10 +167,7 @@ body, .ui.header {
     border-radius: 30px;
 }
 
-#menuIcon1 img:hover,
-#menuIcon2 img:hover,
-#menuIcon3 img:hover,
-#menuIcon4 img:hover {
+#menuIcon1 img:hover, #menuIcon2 img:hover, #menuIcon3 img:hover, #menuIcon4 img:hover {
     -moz-box-shadow: 0 0 5px 5px #888;
     -webkit-box-shadow: 0 0 5px 5px#888;
     box-shadow: 0 0 5px 5px rgb(184, 184, 184);
@@ -149,7 +175,7 @@ body, .ui.header {
 }
 
 #footerLogo {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     background-size: cover;
 }
@@ -158,7 +184,7 @@ body, .ui.header {
     color: rgb(0, 132, 255);
 }
 
-.footer a:hover{
+.footer a:hover {
     color: rgb(126, 193, 255);
 }
 
@@ -186,6 +212,22 @@ body, .ui.header {
     .banner {
         width: 100%;
     }
+    #banner_scheduleRWDDiv {
+        display: block;
+    }
+    #schedule {
+        display: none;
+    }
+    .schedule_rule {
+        width: 100%;
+        padding-bottom: 120%;
+        /**根據圖片高寬比計算*/
+        margin: 0 auto;
+        background-size: contain;
+    }
+    .menu .item {
+        font-size: 3.5vmin !important;
+    }
     #scheduleDiv.ui.vertical.stripe {
         padding: 2em 0em;
     }
@@ -195,8 +237,7 @@ body, .ui.header {
     #footerLogo {
         width: 100%;
     }
-    #footer h5,
-    #footer h4{
-        white-space:nowrap;
+    #footer h5, #footer h4 {
+        white-space: nowrap;
     }
 }
